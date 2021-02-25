@@ -21,7 +21,7 @@ export class CadastrarComponent implements OnInit {
   ) { }
 
   ngOnInit()  {
-    window.scroll()
+    window.scroll(0,0)
 
     this.user
   }
@@ -44,7 +44,6 @@ export class CadastrarComponent implements OnInit {
       this.authService.cadastrar(this.user).subscribe((resp: User) => {
         this.user = resp
         this.router.navigate(['/entrar'])
-
         alert('Usuário cadastrado!')
       })
     }
