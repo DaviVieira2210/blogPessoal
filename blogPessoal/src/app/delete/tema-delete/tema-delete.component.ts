@@ -40,7 +40,7 @@ export class TemaDeleteComponent implements OnInit {
   excluir(){
     this.temaService.deleteTema(this.idTema).subscribe(() =>{
       alert('O tema foi excluído!')
-      this.router.navigate(['tema'])
+      this.router.navigate(['/tema'])
     })
   }
 
